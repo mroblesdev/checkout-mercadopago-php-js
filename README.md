@@ -58,6 +58,10 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
  ## Autores ✒️
 - **Marco Robles** - *Desarrollo* - [mroblesdev](https://github.com/mroblesdev)
 
+## Licencia 📄
+
+Este proyecto está bajo la Licencia MIT License - mira el archivo [LICENSE](LICENSE) para más detalles.
+
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
