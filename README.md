@@ -13,7 +13,7 @@ Este repositorio contiene ejemplos de integración de Mercado Pago Checkout Pro 
 
 ## Implementación Básica 💳
 
-La carpeta [integracion_simple](integracion_simple) contiene un ejemplo sencillo de cómo integrar Mercado Pago Checkout Pro en tu sitio web usando PHP y JavaScript.
+La carpeta [integracion-simple](integracion-simple) contiene un ejemplo sencillo de cómo integrar Mercado Pago Checkout Pro en tu sitio web usando PHP y JavaScript.
 
 En el archivo `index.php` agrega tu ACCESS_TOKEN 
 
@@ -35,7 +35,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
 
 ## Personalización Avanzada ⚙️
 
-La carpeta [integracion_avanzada](integracion_avanzada) contiene un ejemplo de cómo personalizar Mercado Pago Checkout Pro para mejorar la experiencia del usuario.
+La carpeta [integracion-avanzada](integracion-avanzada) contiene un ejemplo de cómo personalizar Mercado Pago Checkout Pro para mejorar la experiencia del usuario.
 
 ![Integracion avanzada](screenshots/integracion-avanzada.jpg)
 
