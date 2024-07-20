@@ -1,0 +1,8 @@
+# Visual Studio Code
+.vscode/
+
+#-------------------------
+# Composer
+#-------------------------
+vendor/
+composer.lock

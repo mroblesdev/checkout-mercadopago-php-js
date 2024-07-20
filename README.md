@@ -1,6 +1,10 @@
 # Integración de Mercado Pago Checkout Pro Con PHP y Javascript
 
-Este repositorio contiene ejemplos de integración de Mercado Pago Checkout Pro en PHP y JavaScript. Se divide en dos carpetas: una para la implementación básica y otra para la personalización avanzada.
+Este repositorio contiene ejemplos de integración de Mercado Pago Checkout Pro en PHP y JavaScript. Se divide en tres carpetas:
+
+- Integración simple
+- Integración avanzada
+- Recibir notificaciones Webhooks de pagos
 
 ## Requerimientos 📋
 
@@ -15,13 +19,13 @@ Este repositorio contiene ejemplos de integración de Mercado Pago Checkout Pro 
 
 La carpeta [integracion-simple](integracion-simple) contiene un ejemplo sencillo de cómo integrar Mercado Pago Checkout Pro en tu sitio web usando PHP y JavaScript.
 
-En el archivo `index.php` agrega tu ACCESS_TOKEN 
+En el archivo `index.php` agrega tu `ACCESS_TOKEN`
 
 ```
 MercadoPagoConfig::setAccessToken("PROD_ACCESS_TOKEN");
 ```
 
-También agrega tu PUBLIC_KEY 
+También agrega tu `PUBLIC_KEY` 
 
 ```
 const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
@@ -39,13 +43,13 @@ La carpeta [integracion-avanzada](integracion-avanzada) contiene un ejemplo de c
 
 ![Integracion avanzada](screenshots/integracion-avanzada.jpg)
 
-En el archivo `index.php` agrega tu ACCESS_TOKEN 
+En el archivo `index.php` agrega tu `ACCESS_TOKEN` 
 
 ```
 MercadoPagoConfig::setAccessToken("PROD_ACCESS_TOKEN");
 ```
 
-También agrega tu PUBLIC_KEY 
+También agrega tu `PUBLIC_KEY`
 
 ```
 const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
@@ -54,6 +58,25 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
  ```
 
 **Link del vídeo:** [https://youtu.be/pCYpPqGoUqM](https://youtu.be/pCYpPqGoUqM)
+
+## Notificaciones WebHooks 🔔
+
+La carpeta [webhooks](webhooks) contiene un ejemplo para recibir los mensajes de eventos de pagos, además de mostrar las acciones necesarias que debes realizar para que Mercado Pago valide que las notificaciones han sido recibidas correctamente.
+
+
+Configura tu `notification_url` en la personalización del Checkout Pro para apuntar al archivo `index.php` de esta carpeta:
+
+```
+'notification_url' => 'https://dominio.com/index.php'
+```
+
+En el archivo `index.php` que recibe las notificaciones, agrega el mismo `ACCESS_TOKEN` que usas en la personalización del Checkout:
+
+```
+MercadoPagoConfig::setAccessToken("PROD_ACCESS_TOKEN");
+```
+
+**Link del vídeo:** [https://youtu.be/RhK5PrQJGMI](https://youtu.be/RhK5PrQJGMI)
 
  ## Autores ✒️
 - **Marco Robles** - *Desarrollo* - [mroblesdev](https://github.com/mroblesdev)
