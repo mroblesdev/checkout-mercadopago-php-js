@@ -53,7 +53,7 @@ $preference = $client->create([
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- SDK MercadoPago.js -->
     <script src="https://sdk.mercadopago.com/js/v2"></script>
